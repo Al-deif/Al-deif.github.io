@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أبــوضيـــــــــف</title>
+    <link rel="stylesheet" href="style.css">
+    <!--********************************************-->
+    <link href="bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
+    <link href="bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="bootstrap-icons-1.13.1/bootstrap-icons.scss" rel="stylesheet">
+    <!--********************************************-->
+        <link rel="shortcut icon" type="png" href="assets/ad-redArtboard 1.svg">
+    <style>
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+<div class="logo" onclick="navigateTo('home')"><img class="logo" src="assets/ad-blueArtboard 1.svg" >أبــوضيـــــــــف</div>
+            <ul>
+                <li><a href="#" id="nav-home" class="active-link" onclick="navigateTo('home')">الرئيسية</a></li>
+                <li><a href="#" id="nav-courses" onclick="navigateTo('courses')">الكورسات</a></li>
+                <li><a href="#" id="nav-lib" onclick="navigateTo('lib')" >المكتبة</a></li>
+                <li><a href="#" id="nav-about" onclick="navigateTo('about')">عن المنصة</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 🌐 View 1: Main Home Screen View -->
+    <div id="home-view" class="view-section">
+        <header class="hero">
+            <div class="container">
+                <h1>تعلّم. طبّق. ابتكِر.</h1>
+                <p>المنصة العربية المتخصصة لطلاب هندسة الاتصالات والإلكترونيات. نوفر لك المعرفة لتصنع مستقبلك التقني.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-outline">قناة اليوتيوب</a>
+                    <a href="#" onclick="navigateTo('courses')" class="btn btn-outline">استكشف الكورسات</a>
+                </div>
+            </div>
+        </header>
+<!--**************************************************************************************************-->
+    <!-- 🎓 In View 1: Courses Section (Flexbox & YouTube Aspect Ratio Cover) -->
+    <section class="courses-section" id="courses">
+        <div class="container">
+            <div class="section-title" style="padding-top: 20px;">
+                <h2>الدورات والكورسات الاحترافية</h2>
+                <p>مسارات تعليمية متكاملة مصممة بأسلوب هندسي عملي مبسط لربط الدراسة بالواقع التطبيقي</p>
+            </div>
+
+            <div class="courses-flex">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-img-wrapper bg-gradient-1">
+                        <i class="bi-clock-fill"></i>
+                        <span class="course-badge">مبتدئ</span>
+                        <span class="course-duration"><i class="bi-clock"></i> 14 ساعة</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>دورة تصميم الدوائر الإلكترونية واللوحات المطبوعة (PCB)</h3>
+                        <p>ابدأ من الصفر في فهم المكونات الإلكترونية، وتعلم رسم المخططات وتصميم لوحاتك الخاصة خطوة بخطوة باستخدام برامج التصميم الحديثة.</p>
+                        <div class="course-meta">
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i> م. أحمد دياب</span>
+                            <button onclick="openCoursePage('matlab')" class="course-btn">عرض الكورس</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-img-wrapper bg-gradient-2">
+                        <i class="bi-wifi"></i>
+                        <span class="course-badge">متقدم</span>
+                        <span class="course-duration"><i class="bi-clock"></i> 18 ساعة</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>كورس هندسة الاتصالات اللاسلكية والجيل الخامس 5G</h3>
+                        <p>شرح تفصيلي شامل لشبكات الهاتف المحمول، بدءاً من المعالجة الرقمية للإشارة وتضمين الترددات، وصولاً إلى البنية التحتية لتقنية الـ 5G.</p>
+                        <div class="course-meta">
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i> م. أحمد دياب</span>
+                            <button onclick="openCoursePage('telecom')" class="course-btn">عرض الكورس</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                
+				<div class="course-card">
+                    <div class="course-img-wrapper bg-gradient-3">
+                        <i class="bi-wifi"></i>
+                        <span class="course-badge">متقدم</span>
+                        <span class="course-duration"><i class="bi-clock"></i> 18 ساعة</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>برمجة الأنظمة المدمجة ومتحكمات الأردوينو</h3>
+                        <p>تعلم منطق البرمجة ولغة C++ لبناء مشاريع ذكية، والتحكم بالحساسات والمحركات، وتصميم حلول عملية لأنظمة إنترنت الأشياء IoT.</p>
+                        <div class="course-meta">
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i> م. أحمد دياب</span>
+                            <button onclick="openCoursePage('embedded')" class="course-btn">عرض الكورس</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!--**************************************************************************************************-->
+<!-- 🎓 In View 1: files -->
+        <section class="container" id="files">
+            <div class="section-title">
+                <h2>أحدث الملفات التعليمية</h2>
+                <p>اخترنا لك مجموعة من أهم المراجع التي تم رفعها مؤخراً</p>
+            </div>
+
+        <div class="files-grid">
+            <!-- File 1 -->
+            <div class="file-card">
+                <i class="bi-filetype-pdf"></i>
+                <span class="file-tag">إلكترونيات</span>
+                <h4>أساسيات الدوائر المتكاملة</h4>
+                <p>ملخص شامل يشرح كيفية عمل الترانزستور والدوائر المنطقية في أنظمة الـ IC.</p>
+                <a href="#" class="download-btn">تحميل </a>
+            </div>
+
+            <!-- File 2 -->
+            <div class="file-card">
+                <i class="bi-filetype-ppt"></i>
+                <span class="file-tag">اتصالات</span>
+                <h4>مستقبل شبكات الـ 5G</h4>
+                <p>عرض تقديمي يشرح التقنيات المستخدمة في الجيل الخامس والفرق بينها وبين الجيل الرابع.</p>
+                <a href="#" class="download-btn">تحميل </a>
+            </div>
+
+            <!-- File 3 -->
+            <div class="file-card">
+                <i class="bi-file-code"></i>
+                <span class="file-tag">برمجة</span>
+                <h4>برمجة الميكروكنترولر</h4>
+                <p>دليل عملي للبدء في كتابة الأكواد واستخدام المتحكمات الدقيقة في المشاريع الهندسية.</p>
+                <a href="#" class="download-btn">تحميل </a>
+            </div>
+        </div>
+    </section>
+    </div>
+<!--**************************************************************************************************-->
+
+    <!-- 🌐 View 2: Standalone Dedicated Courses Page -->
+    <div id="courses-view" class="view-section hidden">
+        <div class="container" style="padding: 40px 0 80px;">
+            <div class="courses-hero-header">
+                <h2>دليل المسارات والكورسات الهندسية الاحترافية</h2>
+                <p>استكشف واكتشف مسارات تعليمية متكاملة بأسلوب هندسي عملي يربط النظرية بالواقع التطبيقي المعملي</p>
+                
+                <!-- Search & Filters Container -->
+                <div class="filter-panel">
+                    <div class="search-wrapper">
+                        <i class="bi-search"></i>
+                        <input type="text" id="course-search-input" oninput="searchCourses()" placeholder="ابحث باسم الكورس، المحاضر، أو الكلمات المفتاحية (مثال: PCB, 5G, أردوينو)...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filterCategory('all', this)">الكل</button>
+                        <button class="filter-btn" onclick="filterCategory('إلكترونيات', this)">إلكترونيات</button>
+                        <button class="filter-btn" onclick="filterCategory('اتصالات', this)">اتصالات</button>
+                        <button class="filter-btn" onclick="filterCategory('برمجة', this)">برمجة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Courses Flex Container -->
+            <div class="courses-flex" id="courses-catalog-flex">
+                <!-- Courses list will be dynamically populated here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+<!--**************************************************************************************************-->
+    <!-- 🌐 View 3: Dedicated About Us Page View -->
+    <div id="about-view" class="view-section hidden">
+        <div class="container" style="padding: 40px 0 80px;">
+            <div class="about-header">
+                <h2>عن منصة أبــوضيـــــــــف التعليمية</h2>
+                <p>قصتنا، رؤيتنا، وشغفنا نحو تمكين المهندسين العرب بالمعرفة والخبرة التطبيقية</p>
+            </div>
+
+            <!-- Vision and Beginning -->
+            <div class="about-grid">
+                <div class="about-text-card">
+                    <h3><i  class="bi-clock-history"></i> الرؤية والبداية</h3>
+                    <p>بدأت منصة <strong>أبــوضيـــــــــف</strong> كفكرة بسيطة تهدف إلى سد الفجوة العميقة بين الدراسة الأكاديمية النظرية والواقع العملي في مجالات هندسة الاتصالات والإلكترونيات.</p>
+                    <p>نحن ندرك تماماً التحديات التي يواجهها طالب الهندسة: تشتت المصادر، صعوبة المراجع الأجنبية، والفجوة بين ما يُدرس في القاعات وما يطلبه سوق العمل. من قلب هذه التحديات، انطلقت منصتنا لتكون المرجع التقني الأول الذي يجمع بين الرصانة العلمية والبساطة في الطرح.</p>
+                </div>
+                <div class="about-visual-card">
+                    <img src="assets/ad-wArtboard 1.svg" >
+                    <i class=""></i>
+                    <h2>تبسيط المعرفة</h2>
+                    <p style="opacity: 0.9; font-size: 0.95rem; margin-top: 10px; max-width: 250px; line-height: 1.5;">نصنع جسراً حقيقياً يربط دراستك الأكاديمية بالحياة المهنية والعملية</p>
+                </div>
+            </div>
+
+            <!-- Mission Box -->
+            <div class="about-mission-box">
+                <h3><i class="bi-bullseye"></i> رسالتنا: "تبسيط المعقّد، وتمكين العقول"</h3>
+                <p>نحن لا نكتفي بتقديم مجرد ملفات أو شروحات تقليدية؛ بل نسعى لبناء عقلية هندسية متكاملة قادرة على التحليل، الابتكار، وحل المشكلات. نهدف إلى إثراء المحتوى الهندسي العربي بمواد علمية دقيقة، تُعين الطالب على فهم "كيف تعمل الأشياء" وليس فقط "كيف يجتاز الاختبار".</p>
+            </div>
+
+            <!-- Core Values -->
+            <div class="values-section-title">
+                <h3><i class="bi-shield-shaded" style="color: var(--primary);"></i> قيمنا الأساسية</h3>
+                <p style="color: #747d8c; margin-top: 5px;">المبادئ التي تقود كل ما نصنعه من شروحات ومصادر</p>
+            </div>
+
+            <div class="values-grid">
+                <!-- Value 1 -->
+                <div class="value-card-about">
+                    <img class="img-about" src="assets/brainArtboard 1.svg" >
+                    <i class="bi-brain"></i>
+                    <h4>التركيز على الجوهر</h4>
+                    <p>نبتعد عن الحشو الأكاديمي ونركز على صلب الموضوع. نقدم لك المعلومة الصافية التي تحتاجها لفهم المادة وتطبيقها مباشرة دون تشتيت أو تعقيد إضافي.</p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="value-card-about">
+                    <i class="bi-tools"></i>
+                    <h4>التكامل بين النظري والعملي</h4>
+                    <p>الهندسة ليست معادلات على ورق فقط. لذلك، نحرص على إرفاق شروحاتنا بملفات محاكاة، ومخططات دوائر، وأكواد برمجية لربط النظرية بالتطبيق المعملي.</p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="value-card-about">
+                    <i class="bi-bar-chart-line-fill"></i>
+                    <h4>مواكبة المستقبل</h4>
+                    <p>عالم التقنية لا يتوقف، وكذلك نحن. نحرص على تحديث مكتبتنا باستمرار لتشمل أحدث التقنيات مثل: شبكات الجيل الخامس (5G)، إنترنت الأشياء (IoT)، والأنظمة المدمجة.</p>
+                </div>
+            </div>
+
+            <!-- Founder Message -->
+            <div class="founder-message">
+                <img class="img-about" src="assets/quotArtboard 1.svg" >
+                <p>سواء كنت طالباً في سنواتك الأولى تبحث عن التأسيس الصحيح في عالم الإلكترونيات، أو خريجاً يطمح لتطوير مهاراته التقنية وفهم أنظمة الاتصالات المعقدة، فإن منصة AD هي مساحتك الآمنة للتعلم، التجربة، والخطأ، حتى تصل إلى مرحلة الاحتراف والابتكار. المعرفة الهندسية حق للجميع، ومهمتنا هي جعل الوصول إليها أسهل وأكثر تنظيماً من أي وقت مضى.</p>
+                <h5>مؤسس منصة AD - مهندس اتصالات وإلكترونيات</h5>
+            </div>
+        </div>
+    </div>
+<!--**************************************************************************************************-->
+    <!-- 🌐 View 4: Dynamic Course Details View نظام تعريف قاعدة البيانات والاخذ منها -->
+    <div id="course-details-view" class="view-section hidden">
+        <div class="container course-details-wrapper">
+            <!-- Back button and breadcrumbs -->
+            <div class="back-btn-container">
+                <button onclick="goBackToHome()" class="btn-back">
+                    <i class="bi-arrow-right-short"></i> العودة للرئيسية
+                </button>
+            </div>
+
+            <div class="breadcrumbs">
+                <a href="#" onclick="goBackToHome()">الرئيسية</a>
+                <i class="bi-chevron-left" style="font-size:0.7rem;"></i>
+                <a href="#" onclick="navigateTo('courses')">الكورسات</a>
+                <i class="bi-chevron-left" style="font-size:0.7rem;"></i>
+                <span id="breadcrumb-current-course" style="font-weight: bold; color: var(--primary);">اسم الكورس الحالي</span>
+            </div>
+
+            <!-- Detail Grid Layout -->
+            <div class="course-detail-grid">
+                <!-- Right Main Column -->
+                <main class="course-detail-main">
+                    <h1 id="detail-title">عنوان الكورس</h1>
+                    
+                    <div class="course-detail-meta">
+                        <span><i class="bi-person-fill"></i> المحاضر: <strong id="detail-instructor">اسم المحاضر</strong></span>
+                        <span><i class="bi-clock-fill"></i> مدة الكورس: <strong id="detail-duration">0 ساعة</strong></span>
+                        <span><i class="bi-tag"></i> التخصص: <strong id="detail-category">القسم</strong></span>
+                        <span><i class="bi-bar-chart-line-fill"></i> المستوى: <strong id="detail-badge">مستوى الصعوبة</strong></span>
+                    </div>
+
+                    <!-- 16:9 Aspect Ratio cover card using pure CSS -->
+                    <div class="detail-cover" id="detail-cover-img">
+                    <!--   <i id="detail-icon" class="bi-diagram-3-fill"></i>--> 
+                    </div>
+
+                    <h2 class="section-headline">وصف وتفاصيل الكورس</h2>
+                    <p class="course-description" id="detail-description">سيتم كتابة الوصف التفصيلي هنا...</p>
+
+                    <h2 class="section-headline">ماذا ستتعلم في هذا الكورس؟</h2>
+                    <ul class="outcomes-list" id="detail-outcomes">
+                        <div class="bi-clock" ></div>
+                        <!-- Will be populated dynamically -->
+                    </ul>
+
+                    <h2 class="section-headline">المنهج الدراسي والدروس</h2>
+                    <div class="curriculum-timeline" id="detail-curriculum">
+                        <!-- Will be populated dynamically -->
+                    </div>
+                </main>
+
+                <!-- Left Sidebar: Downloads & Files -->
+                <aside class="course-detail-sidebar">
+                    <div class="sidebar-card">
+                        <h3><i class="bi-cloud-arrow-down-fill"></i> ملفات وموارد الكورس</h3>
+                        <p style="color:#747d8c; font-size:0.85rem; margin-bottom: 20px;">قم بتحميل جميع الملفات والمواد التعليمية المرفقة بهذا الكورس مجاناً بصيغ مبسطة جاهزة للطباعة والعمل:</p>
+                        
+                        <div class="resource-list" id="detail-resources">
+                            <!-- Will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card" style="background:none;
+                    padding: 0px; "> 
+    <!--*************************************************************-->                
+                     <!--   <h4 style="font-size:1.1rem; margin-bottom:10px; color:var(--primary);">
+                            <i class="bi-shield-shaded"></i> ميزة الضمان الأكاديمي</h4>
+                        <p style="font-size:0.85rem; line-height: 1.6; color:#57606f;">جميع الملفات تخضع لمراجعة دورية وتحديث لتطابق متطلبات أحدث المناهج التعليمية في الجامعات والمعاهد التقنية.</p>
+                    --></div>
+                </aside>
+            </div>
+        </div>
+    </div> 
+    <!--*************************************************************-->
+    <!-- Newsletter Footer
+    <section class="newsletter">
+        <div class="container">
+            <h2>كن أول من يعلم</h2>
+            <p>اشترك في النشرة الإخبارية لتصلك أحدث الملفات والمصادر مباشرة على بريدك الإلكتروني</p>
+            <form class="subscribe-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                <button type="submit">اشترك الآن</button>
+            </form>
+        </div>
+    </section>
+ -->
+
+<!--*************************************** class="view-section hidden" **********************-->
+<!-- 🌐 View 5: المكتبة الهندسية والمراجع الرقمية | نظام تعريف قاعدة البيانات والاخذ منها -->
+        <div  id="lib-view" class="view-section hidden" >
+            <div class="container">
+        <!-- 📚 Modern Digital Library Section -->
+            <div class="section-title">
+                <h2>المكتبة الهندسية والمراجع الرقمية</h2>
+                <p>مجموعة من أرقى الكتب والمناهج الدراسية الشاملة والمصممة لتسريع تعلمك وتوثيق معرفتك مجاناً</p>
+            </div>
+
+            <!-- شبكة الكتب فارغة وجاهزة للحقن بواسطة JS -->
+            <div class="library-grid" id="libraryGrid">
+        </div>
+    </div>
+
+    <!-- نافذة إشعار التحميل المخصصة لتجنب استخدام alert() -->
+    <div class="custom-alert" id="customAlert">
+        <i class="fas fa-check-circle"></i>
+        <span id="alertMessage">بدأ تحميل الملف الآن...</span>
+    </div>
+</div>
+<!--****************************-----main-footer-----*********************************-->
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2 class="footer-logo">أبــوضيـــــــــف</h2>
+            <p>منصة تعليمية متخصصة في شرح علوم هندسة الاتصالات والإلكترونيات بأحدث الأساليب التقنية.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>روابط سريعة</h3>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="#">الكورسات</a></li>
+                <li><a href="#">المكتبة</a></li>
+                <li><a href="#">عن المنصة</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+    جميع الحقوق محفوظة   2026  &copy;
+    </div>
+        <div class="footer-bottom2">
+    تم التطوير بكل فخر بواسطة أبــوضيـــــــــف
+    </div>
+</footer>
+<!--*************************************************************-->
+    <!-- Dynamic Course Database -->
+    <script src="app.js"></script>
+
+</body>
+</html>
