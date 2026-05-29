@@ -6,8 +6,8 @@
     id: "matlab",
     title: "دورة مقدمة في البرمجة والمحاكاة باستخدام MATLAB",
     category: "هندسة وبرمجيات",
-    badge: "مبتدئ إلى متقدم",
-    duration: "20 ساعة",
+    badge: "مبتدئ",
+    duration: "لم يتم التحديد",
     instructor: "أبــوضيـــــــــف",
     bgClass: "bg-gradient-0",
     /* icon: "bi-cpu-fill",*/
@@ -23,9 +23,9 @@
         "التعامل مع المتطابقات وكثيرات الحدود (Polynomials) وإجراء عمليات الملاءمة الإحصائية المنحنية (Curve Fitting)."
     ],
     resources: [
-                    { name: "Chapter-one", size: "4MB", type: "pdf", icon: "bi-file-pdf" },
-                    { name: "Chapter-Two", size: "5MB", type: "zip", icon: "bi-file-pdf" },
-                    { name: "Chapter-three", size: "1MB", type: "pdf", icon: "bi-file-pdf" }
+                    { name: "Chapter-one", size: "1.5MB", type: "pdf", icon: "bi-filetype-pdf" ,url:"files/matlab-ch-1.pdf" },
+                    { name: "Chapter-Two", size: "5MB", type: "zip", icon: "bi-filetype-pdf" },
+                    { name: "Chapter-three", size: "1MB", type: "pdf", icon: "bi-filetype-pdf" }
                 ],
     curriculum: [
         { title: "الفصل الأول: بدء العمل والأساسيات التفاعلية (Starting with MATLAB)", desc: "التعرف على واجهة البرنامج، استخدام نافذة الأوامر كحاسبة ذكية، الدوال الرياضية المدمجة، تعريف المتغيرات القياسية، وإنشاء السكربتات الأساسية." },
@@ -39,42 +39,12 @@
     ]
 },
             /**************************************************************** */
-                        Matlab: {
-                id: "Matlab",
-                title: "An Introduction to Matlab",
-                category: "برمجة",
-                badge: "مبتدئ",
-                duration: "لم يتم التحديد",
-                instructor: "أبــوضيـــــــــف",
-                bgClass: "bg-gradient-0",
-               /* icon: "bi-mortarboard-fill",*/
-                description: "السلام عليكم,سوف نتعلم في هذه الدورة التدريبية مبادئ واساسيات التعامل مع برنامج المات لاب.",
-                outcomes: [
-                    "فهم مبادئ عمل العناصر الإلكترونية الأساسية (المقاومات، المكثفات، الترانزستورات، والدوائر المتكاملة).",
-                    "احتراف استخدام برامج تصميم الدوائر المطبوعة ورسم المخططات التخطيطية (Schematic).",
-                    "تحويل المخططات التخطيطية إلى لوحات مطبوعة (Layout) متعددة الطبقات بشكل سليم وعلمي.",
-                    "مراعاة قواعد هندسة التصميم لضمان الأمان والحد من التشويش الكهرومغناطيسي (EMI).",
-                    "توليد وتصدير ملفات التصنيع (Gerber Files) لإرسالها لأي مصنع لوحات مطبوعة حول العالم."
-                ],
-                resources: [
-                    { name: "Chapter-one", size: "4MB", type: "pdf", icon: "bi-file-pdf" },
-                    { name: "Chapter-Two", size: "5MB", type: "zip", icon: "bi-file-pdf" },
-                    { name: "Chapter-three", size: "1MB", type: "pdf", icon: "bi-file-pdf" }
-                ],
-                curriculum: [
-                    { title: "المقدمة والمفاهيم الأساسية للإلكترونيات", desc: "التعرف على الترانزستورات والمقاومات وأنواع اللوحات المطبوعة." },
-                    { title: "التعرف على بيئة برنامج التصميم وإعداد المكتبات", desc: "تثبيت أدوات العمل وكيفية بناء عناصر ثلاثية الأبعاد خاصة بك." },
-                    { title: "رسم المخطط الإلكتروني وتوصيل العناصر (Schematic Capture)", desc: "وضع العناصر وتوجيه الإشارات الكهربائية بشكل صحيح." },
-                    { title: "تحديد أبعاد اللوحة وترتيب المكونات (PCB Layout)", desc: "توزيع الأجزاء في مساحة مدروسة بدقة وتنسيقها فيزيائياً." },
-                    { title: "توصيل المسارات اليدوي والتلقائي (Routing)", desc: "ربط الموصلات النحاسية مع مراعاة قواعد العزل والتشويش الترددي." },
-                    { title: "توليد ملفات التصنيع النهائية والطباعة (Gerber Files)", desc: "تحضير الدائرة للشحن لأي مصنع إلكترونيات بشكل احترافي ومتوافق." }
-                ]
-            },
+            
             pcb: {
                 id: "pcb",
                 title: "دورة تصميم الدوائر الإلكترونية واللوحات المطبوعة (PCB)",
                 category: "إلكترونيات",
-                badge: "مبتدئ إلى متوسط",
+                badge: "متوسط",
                 duration: "14 ساعة",
                 instructor: "أبــوضيـــــــــف",
                 bgClass: "bg-gradient-1",
@@ -88,9 +58,9 @@
                     "توليد وتصدير ملفات التصنيع (Gerber Files) لإرسالها لأي مصنع لوحات مطبوعة حول العالم."
                 ],
                 resources: [
-                    { name: "الدليل الشامل لتصميم الـ PCB (كتاب إلكتروني PDF)", size: "4.8 MB", type: "pdf", icon: "bi-file-pdf" },
-                    { name: "مكتبة المكونات الإلكترونية الجاهزة لبرامج التصميم", size: "12.5 MB", type: "zip", icon: "bi-file-pdf" },
-                    { name: "مخطط عملي لدائرة منظم جهد متكامل للتدريب والتطبيق", size: "1.2 MB", type: "pdf", icon: "bi-file-pdf" }
+                    { name: "الدليل الشامل لتصميم الـ PCB (كتاب إلكتروني PDF)", size: "4.8 MB", type: "pdf", icon: "bi-filetype-pdf" },
+                    { name: "مكتبة المكونات الإلكترونية الجاهزة لبرامج التصميم", size: "12.5 MB", type: "zip", icon: "bi-filetype-pdf" },
+                    { name: "مخطط عملي لدائرة منظم جهد متكامل للتدريب والتطبيق", size: "1.2 MB", type: "pdf", icon: "bi-filetype-pdf" }
                 ],
                 curriculum: [
                     { title: "المقدمة والمفاهيم الأساسية للإلكترونيات", desc: "التعرف على الترانزستورات والمقاومات وأنواع اللوحات المطبوعة." },
@@ -107,7 +77,7 @@
                 category: "اتصالات",
                 badge: "متقدم",
                 duration: "18 ساعة",
-                instructor: "م. أحمد دياب",
+                instructor: "أبــوضيـــــــــف",
                 bgClass: "bg-gradient-2",
              /*   icon: "bi-mortarboard-fill",*//*********************************************************************************** */
                 description: "كورس هندسة الاتصالات اللاسلكية والجيل الخامس مصمم لتمكين الطلاب والمهندسين من فهم أحدث تقنيات الجيل الخامس (5G NR) بشكل هندسي وعميق. يشمل الكورس شرحاً تفصيلياً لتقنيات التعديل الترددي، معالجة الإشارة الرقمية، بنية الشبكات اللاسلكية الحديثة، وأنواع الهوائيات الذكية وكيفية تخطيط التغطية في المدن.",
@@ -119,9 +89,9 @@
                     "فهم تطبيقات إنترنت الأشياء والسيارات ذاتية القيادة عبر تقنيات الجيل الخامس الفريدة."
                 ],
                 resources: [
-                    { name: "ملخص معايير وتقنيات الـ 5G الفريدة (ملف PDF مفصل)", size: "6.2 MB", type: "pdf", icon: "bi-file-pdf" },
-                    { name: "مخطط تدفق البيانات في واجهة الهواء (Air Interface)", size: "2.4 MB", type: "pdf", icon: "bi-file-pdf" },
-                    { name: "محاكاة لانتشار موجات الميكروويف في المدن الذكية", size: "18.1 MB", type: "zip", icon: "bi-file-pdf" }
+                    { name: "ملخص معايير وتقنيات الـ 5G الفريدة (ملف PDF مفصل)", size: "6.2 MB", type: "pdf", icon: "bi-filetype-pdf" },
+                    { name: "مخطط تدفق البيانات في واجهة الهواء (Air Interface)", size: "2.4 MB", type: "pdf", icon: "bi-filetype-pdf" },
+                    { name: "محاكاة لانتشار موجات الميكروويف في المدن الذكية", size: "18.1 MB", type: "zip", icon: "bi-filetype-pdf" }
                 ],
                 curriculum: [
                     { title: "تطور شبكات الاتصالات المحمولة (من 1G إلى 5G)", desc: "مقارنة تاريخية وفهم الاحتياجات التي قادت لتطوير الجيل الخامس." },
@@ -138,7 +108,7 @@
                 category: "برمجة",
                 badge: "متوسط",
                 duration: "12 ساعة",
-                instructor: "م. أحمد دياب",
+                instructor: "أبــوضيـــــــــف",
                 bgClass: "bg-gradient-3",
              /*   icon: "bi-mortarboard-fill",*/
                 description: "انطلق في بناء مشاريعك الذكية وتطبيقات إنترنت الأشياء (IoT). ستتعلم في هذا الكورس البرمجة بلغة C++ وكتابة أكواد برمجية نظيفة وخالية من المشاكل للتحكم بالحساسات والمحركات، والربط بالإنترنت عبر متحكمات ESP32 الشهيرة وبناء لوحة تحكم سحابية تفاعلية لمشروعك.",
@@ -150,9 +120,9 @@
                     "فهم آليات التعامل مع المقاطعات (Interrupts) والمؤقتات البرمجية لتنظيم المهام الحرجة."
                 ],
                 resources: [
-                    { name: "كتاب الأكواد الجاهزة لأكثر من 30 حساس إلكتروني", size: "3.5 MB", type: "pdf", icon: "bi-file-pdf" },
-                    { name: "حزمة المخططات التوصيلية وبرامج المحاكاة", size: "14.2 MB", type: "zip", icon: "bi-file-pdf" },
-                    { name: "دليل تهيئة برامج التطوير IDE للأنظمة المدمجة", size: "1.9 MB", type: "pdf", icon: "bi-file-pdf" }
+                    { name: "كتاب الأكواد الجاهزة لأكثر من 30 حساس إلكتروني", size: "3.5 MB", type: "pdf", icon: "bi-filetype-pdf" },
+                    { name: "حزمة المخططات التوصيلية وبرامج المحاكاة", size: "14.2 MB", type: "zip", icon: "bi-filetype-pdf" },
+                    { name: "دليل تهيئة برامج التطوير IDE للأنظمة المدمجة", size: "1.9 MB", type: "pdf", icon: "bi-filetype-pdf" }
                 ],
                 curriculum: [
                     { title: "مقدمة عن الأنظمة المدمجة والمتحكمات الدقيقة", desc: "فهم بنية المعالجات الصغيرة والفرق بين الميكروبروسيسور والميكروكنترولر." },
@@ -220,13 +190,13 @@
             const filtered = Object.values(coursesData).filter(course => {
                 const matchesCategory = currentCategory === "all" || course.category === currentCategory;
                 const matchesSearch = course.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                                      course.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                                      course.instructor.toLowerCase().includes(searchQuery.toLowerCase());
+                            course.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                            course.instructor.toLowerCase().includes(searchQuery.toLowerCase());
                 return matchesCategory && matchesSearch;
             });
 
             if (filtered.length === 0) {
-                container.innerHTML = `<div class="empty-courses-msg"><i class="bi-search-minus" style="font-size:2rem; display:block; margin-bottom:10px;"></i> لا توجد دورات مطابقة للبحث حالياً...</div>`;
+                container.innerHTML = `<div class="empty-courses-msg"><i class="bi-search" style="font-size:2rem; display:block; margin-bottom:10px;"></i> لا توجد دورات مطابقة للبحث حالياً...</div>`;
                 return;
             }
 /******************************************************************************************* */
@@ -316,7 +286,7 @@
                 `;
                 curriculumDiv.appendChild(item);
             });
-
+/*   قديم
             // Populate Resources / Downloads List
             const resourcesDiv = document.getElementById('detail-resources');
             resourcesDiv.innerHTML = "";
@@ -332,13 +302,36 @@
                     <i class="${res.icon} resource-icon"></i>
                     <div class="resource-info">
                         <div class="resource-name">${res.name}</div>
-                        <div class="resource-size"><i class="bi-file-pdf"></i> الحجم: ${res.size}</div>
+                        <div class="resource-size"><i class="bi-filetype-pdf"></i> الحجم: ${res.size}</div>
+                    </div>
+                    <i class="bi-download resource-download-arrow"></i>
+                `;
+                resourcesDiv.appendChild(link);
+            });*/
+/*                               */
+
+            // Populate Resources / Downloads List
+            const resourcesDiv = document.getElementById('detail-resources');
+            resourcesDiv.innerHTML = "";
+            course.resources.forEach(res => {
+                const link = document.createElement('a');
+                link.href = "#"; // Simulated download trigger
+                link.className = 'resource-item';
+                link.onclick = function(e) {
+                    e.preventDefault();
+                    triggerDownloadFeedback(res.name, res.url);
+                };
+                link.innerHTML = `
+                    <i class="${res.icon} resource-icon"></i>
+                    <div class="resource-info">
+                        <div class="resource-name">${res.name}</div>
+                        <div class="resource-size"><i class="bi-hdd"></i> الحجم: ${res.size}</div>
                     </div>
                     <i class="bi-download resource-download-arrow"></i>
                 `;
                 resourcesDiv.appendChild(link);
             });
-
+/*            */
             // Switch Views smoothly
             document.querySelectorAll('.view-section').forEach(view => {
                 view.classList.add('hidden');
@@ -354,10 +347,11 @@
         function goBackToHome() {
             navigateTo('home');
         }
-
+/*
         // Custom download feedback notification without using native alert()
         function triggerDownloadFeedback(fileName) {
             // Create a custom notification banner
+
             const toast = document.createElement('div');
             toast.style.position = 'fixed';
             toast.style.bottom = '30px';
@@ -380,63 +374,110 @@
             
 
         }
+*/
+        // Custom download feedback notification and actual link redirection
+        function triggerDownloadFeedback(fileName, fileUrl = '#') {
+            // Create a custom notification banner
+            const toast = document.createElement('div');
+            toast.style.position = 'fixed';
+            toast.style.bottom = '30px';
+            toast.style.left = '30px';
+            toast.style.background = '#2ecc71';
+            toast.style.color = '#ffffff';
+            toast.style.padding = '15px 25px';
+            toast.style.borderRadius = '10px';
+            toast.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+            toast.style.zIndex = '9999';
+            toast.style.fontSize = '0.95rem';
+            toast.style.fontWeight = '700';
+            toast.style.direction = 'rtl';
+            toast.style.display = 'flex';
+            toast.style.alignItems = 'center';
+            toast.style.gap = '10px';
+            toast.innerHTML = `<i class="bi-check-circle-fill"></i> جاري تحضير ملفك "${fileName}" وبدء التحميل المجاني بنجاح!`;
 
-        /**************************                        []llllllibbbbbbbb */
+            document.body.appendChild(toast);
+        
+            // Open the real download URL in a new tab if it's set
+            if (fileUrl && fileUrl !== '#') {
+                setTimeout(() => {
+                    window.open(fileUrl, '_blank');
+                }, 500);
+            } 
+            
+            // Auto fade out toast   ظهور اشعار التحميل لفترة من الزمن
+            setTimeout(() => {
+                toast.style.transition = 'all 0.5s ease';
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(10px)';
+                setTimeout(() => { toast.remove(); }, 500);
+            }, 4000);
+        
+        }
+/**************************              lib                  ***************************************************/
+/**************************              lib                  **************************************************/
+/**************************              lib                  *************************************************/
+/**************************              lib                  ************************************************/
+
         
         // مصفوفة البيانات الأساسية للكتب مع تصنيف فئات الأغلفة وتخصيص التفاصيل
         const engineeringBooks = [
             {
                 bgClass: "bg-cover-pcb",
-                coverMeta: "المرجع الهندسي",
-                coverTitle: "تصميم الدوائر المطبوعة PCB",
-                author: "م. أحمد دياب",
-                courseBadge: "المرجع الشامل لدورة الـ PCB",
-                title: "دليل مهندس الإلكترونيات لتصميم لوحات PCB",
-                description: "الكتاب المنهجي الشامل لدراسة رسم المخططات الإلكترونية، وقواعد توجيه المسارات النحاسية (Routing)، وطرق تجنب التشويش الكهروهندسي والمغناطيسي (EMI) لتجهيز الدوائر للشحن والتصنيع الفعلي.",
-                pages: "180 صفحة",
+                coverMeta: "",
+                coverTitle: "",
+                author: "",
+                courseBadge: "من دورة مقدمة في البرمجة والمحاكاة باستخدام MATLAB",
+                title: "An Introduction to Matlab",
+                description: "هذا المرجع هو المدخل الأساسي والشامل لاحتراف بيئة البرمجة الهندسية الأكثر انتشاراً عالمياً MATLAB",
+                pages: "418 صفحة",
                 format: "صيغة PDF",
-                size: "14.5 MB"
+                size: "",
+                fileUrl: "img/p.pdf" // 👈 هنا تضع رابط الملف (داخلي أو خارجي)
+
             },
             {
                 bgClass: "bg-cover-telecom",
                 coverMeta: "المرجع المتقدم",
                 coverTitle: "هندسة الـ 5G والشبكات اللاسلكية",
-                author: "م. أحمد دياب",
+                author: "م. أبوضيف",
                 courseBadge: "المرجع الأساسي لدورة الاتصالات والـ 5G",
                 title: "الاتصالات اللاسلكية وتكنولوجيا الجيل الخامس 5G",
                 description: "كتاب أكاديمي وتطبيقي متكامل يبسط معايير الـ 3GPP لشبكات الجيل الخامس، ومبادئ عمل الهوائيات الذكية وتشكيل الموجات (Beamforming)، وإدارة وتخطيط طاقة التغطية الترددية في المدن الذكية.",
                 pages: "320 صفحة",
                 format: "صيغة PDF",
-                size: "22.1 MB"
+                size: "",
+                        fileUrl: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" // 👈 مثال لرابط من جوجل درايف
+
             },
             {
                 bgClass: "bg-cover-embedded",
                 coverMeta: "البرمجة العملية",
                 coverTitle: "الأنظمة المدمجة ومتحكم الأردوينو",
-                author: "م. أحمد دياب",
+                author: "م. أبوضيف",
                 courseBadge: "كتاب دورة الأنظمة المدمجة والـ IoT",
                 title: "دليل البرمجة والأنظمة المدمجة عملياً",
                 description: "كتاب برمجي وتطبيقي لتعلم كتابة أكواد C++ نظيفة وفعالة، وتفاصيل التحكم بالمقاطعات (Interrupts) في معالجات AVR، وكيفية ربط الحساسات والمحركات ببوابات إنترنت الأشياء الذكية (IoT).",
                 pages: "210 صفحات",
                 format: "صيغة PDF",
-                size: "11.8 MB"
+                size: ""
             },
             {
                 bgClass: "bg-cover-ic",
                 coverMeta: "أساسيات عامة",
                 coverTitle: "أشباه الموصلات والدوائر الإلكترونية",
-                author: "م. أحمد دياب",
+                author: "م. أبوضيف",
                 courseBadge: "مرجع مساعد لكافة التخصصات",
                 title: "فيزياء الترانزستور والدوائر المتكاملة الأساسية",
                 description: "فهم عميق لبنية السيلكون وأشباه الموصلات، وتشغيل الترانزستورات بأنواعها (BJT & MOSFET)، وكيفية تصميم مكبرات الإشارة والمفاتيح الإلكترونية التي تمثل حجر الأساس لأي مهندس اتصالات وإلكترونيات.",
                 pages: "250 صفحة",
                 format: "صيغة PDF",
-                size: "9.3 MB"
+                size: ""
             }
         ];
 
         // حقن كروت الكتب داخل الهيكل البرمجي
-      /**/  function loadLibrary() {
+        /**/  function loadLibrary() {
             const libraryGrid = document.getElementById('libraryGrid');
             if (!libraryGrid) return;
 
@@ -463,7 +504,7 @@
                     <div class="book-details">
                         <div>
                             <span class="book-course-badge">
-                                <i class="fas fa-graduation-cap"></i> ${book.courseBadge}
+                                <i class="bi-mortarboard-fill"></i> ${book.courseBadge}
                             </span>
                             <h3>${book.title}</h3>
                             <p class="book-description-text">${book.description}</p>
@@ -471,32 +512,46 @@
                         
                         <div class="book-meta-footer">
                             <div class="book-info-badges">
-                                <span><i class="fas fa-book-open"></i> ${book.pages}</span>
-                                <span><i class="fas fa-file-pdf"></i> ${book.format}</span>
-                                <span><i class="fas fa-hdd"></i> ${book.size}</span>
+                                <span><i class="bi-book-fill"></i> ${book.pages}</span>
+                                <!--    <span><i class="bi-file-pdf"></i> ${book.format}</span>-->
+                                <!--  <span><i class=""></i> ${book.size}</span> -->
                             </div>
-                            <a href="#" class="book-dl-btn" data-title="${book.title}">
-                                تحميل المرجع <i class="fas fa-download"></i>
-                            </a>
+                            <!--     تحميل الكتب اللي في المكتبة
+<a href="${book.fileUrl}" download="${book.title}.pdf" class="book-dl-btn" data-title="${book.title}">
+    تحميل المرجع <i class="bi-download"></i>
+</a>
+-->
                         </div>
                     </div>
                 `;
 
                 libraryGrid.appendChild(bookCard);
             });
+/*
 
+// ربط أحداث الضغط لزر التحميل لعرض الإشعار والتحميل معاً
+document.querySelectorAll('.book-dl-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        // حذفنا e.preventDefault() لكي يشتغل الرابط والتحميل بشكل طبيعي
+        
+        const bookTitle = this.getAttribute('data-title');
+        triggerDownloadFeedback(bookTitle); // تشغيل إشعار "جاري تحضير الملف..."
+    });
+
+*/
             // ربط أحداث الضغط لزر التحميل لعرض تجربة تفاعلية
             document.querySelectorAll('.book-dl-btn').forEach(button => {
                 button.addEventListener('click', function(e) {
-                    e.preventDefault();
+                   // e.preventDefault();
+
                     const bookTitle = this.getAttribute('data-title');
-                    triggerDownloadFeedback(bookTitle);
+                    triggerDownloadFeedback2(bookTitle);
                 });
             });
         }
 
         // دالة عرض إشعار التحميل التفاعلي والمميز
-        function triggerDownloadFeedback(bookTitle) {
+        function triggerDownloadFeedback2(bookTitle) {
             const alertBox = document.getElementById('customAlert');
             const alertMessage = document.getElementById('alertMessage');
             

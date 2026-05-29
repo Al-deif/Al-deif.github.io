@@ -10,7 +10,7 @@
     <link href="bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet">
     <link href="bootstrap-icons-1.13.1/bootstrap-icons.scss" rel="stylesheet">
     <!--********************************************-->
-        <link rel="shortcut icon" type="png" href="assets/ad-redArtboard 1.svg">
+        <link rel="shortcut icon" type="png" href="assets/ad-red.svg">
     <style>
     </style>
 </head>
@@ -18,7 +18,7 @@
 
     <nav>
         <div class="container">
-<div class="logo" onclick="navigateTo('home')"><img class="logo" src="assets/ad-blueArtboard 1.svg" >أبــوضيـــــــــف</div>
+<div class="logo" onclick="navigateTo('home')"><img class="logo" src="assets/ad-blue.svg" >أبــوضيـــــــــف</div>
             <ul>
                 <li><a href="#" id="nav-home" class="active-link" onclick="navigateTo('home')">الرئيسية</a></li>
                 <li><a href="#" id="nav-courses" onclick="navigateTo('courses')">الكورسات</a></li>
@@ -50,19 +50,37 @@
             </div>
 
             <div class="courses-flex">
+        
+                <!-- Course 0 -->
+                <div class="course-card">
+                    <div class="course-img-wrapper bg-gradient-0">
+                        <i class=""></i>
+                        <span class="course-badge">مبتدئ</span>
+                        <span class="course-duration"><i class="bi-clock"></i>لم يتم التحديد</span>
+                    </div>
+                    <div class="course-body">
+                        <h3>دورة مقدمة في البرمجة والمحاكاة باستخدام MATLAB</h3>
+                        <p>تعد هذه الدورة المدخل الأساسي والشامل لاحتراف بيئة البرمجة الهندسية الأكثر انتشاراً عالمياً MATLAB. </p>
+                        <div class="course-meta">
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i>أبــوضيـــــــــف</span>
+                            <button onclick="openCoursePage('matlab')" class="course-btn">عرض الكورس</button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Course 1 -->
                 <div class="course-card">
                     <div class="course-img-wrapper bg-gradient-1">
-                        <i class="bi-clock-fill"></i>
-                        <span class="course-badge">مبتدئ</span>
+                        <i class=""></i>
+                        <span class="course-badge">متوسط</span>
                         <span class="course-duration"><i class="bi-clock"></i> 14 ساعة</span>
                     </div>
                     <div class="course-body">
                         <h3>دورة تصميم الدوائر الإلكترونية واللوحات المطبوعة (PCB)</h3>
                         <p>ابدأ من الصفر في فهم المكونات الإلكترونية، وتعلم رسم المخططات وتصميم لوحاتك الخاصة خطوة بخطوة باستخدام برامج التصميم الحديثة.</p>
                         <div class="course-meta">
-                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i> م. أحمد دياب</span>
-                            <button onclick="openCoursePage('matlab')" class="course-btn">عرض الكورس</button>
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i>أبــوضيـــــــــف</span>
+                            <button onclick="openCoursePage('pcb')" class="course-btn">قــــــــــريبا</button>
                         </div>
                     </div>
                 </div>
@@ -70,7 +88,7 @@
                 <!-- Course 2 -->
                 <div class="course-card">
                     <div class="course-img-wrapper bg-gradient-2">
-                        <i class="bi-wifi"></i>
+                        <i class=""></i>
                         <span class="course-badge">متقدم</span>
                         <span class="course-duration"><i class="bi-clock"></i> 18 ساعة</span>
                     </div>
@@ -78,17 +96,17 @@
                         <h3>كورس هندسة الاتصالات اللاسلكية والجيل الخامس 5G</h3>
                         <p>شرح تفصيلي شامل لشبكات الهاتف المحمول، بدءاً من المعالجة الرقمية للإشارة وتضمين الترددات، وصولاً إلى البنية التحتية لتقنية الـ 5G.</p>
                         <div class="course-meta">
-                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i> م. أحمد دياب</span>
-                            <button onclick="openCoursePage('telecom')" class="course-btn">عرض الكورس</button>
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i>أبــوضيـــــــــف</span>
+                            <button onclick="openCoursePage('telecom')" class="course-btn">قــــــــــريبا</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Course 3 -->
+                <!-- Course 3 
                 
 				<div class="course-card">
                     <div class="course-img-wrapper bg-gradient-3">
-                        <i class="bi-wifi"></i>
+                        <i class=""></i>
                         <span class="course-badge">متقدم</span>
                         <span class="course-duration"><i class="bi-clock"></i> 18 ساعة</span>
                     </div>
@@ -96,11 +114,11 @@
                         <h3>برمجة الأنظمة المدمجة ومتحكمات الأردوينو</h3>
                         <p>تعلم منطق البرمجة ولغة C++ لبناء مشاريع ذكية، والتحكم بالحساسات والمحركات، وتصميم حلول عملية لأنظمة إنترنت الأشياء IoT.</p>
                         <div class="course-meta">
-                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i> م. أحمد دياب</span>
-                            <button onclick="openCoursePage('embedded')" class="course-btn">عرض الكورس</button>
+                            <span class="course-instructor"><i class="bi-mortarboard-fill"></i>أبــوضيـــــــــف</span>
+                            <button onclick="openCoursePage('embedded')" class="course-btn">قــــــــــريبا</button>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </div>
@@ -121,7 +139,7 @@
                 <span class="file-tag">إلكترونيات</span>
                 <h4>أساسيات الدوائر المتكاملة</h4>
                 <p>ملخص شامل يشرح كيفية عمل الترانزستور والدوائر المنطقية في أنظمة الـ IC.</p>
-                <a href="#" class="download-btn">تحميل </a>
+                <a href="#" class="download-btn">قــــــــــريبا</a>
             </div>
 
             <!-- File 2 -->
@@ -130,7 +148,7 @@
                 <span class="file-tag">اتصالات</span>
                 <h4>مستقبل شبكات الـ 5G</h4>
                 <p>عرض تقديمي يشرح التقنيات المستخدمة في الجيل الخامس والفرق بينها وبين الجيل الرابع.</p>
-                <a href="#" class="download-btn">تحميل </a>
+                <a href="#" class="download-btn">قــــــــــريبا</a>
             </div>
 
             <!-- File 3 -->
@@ -139,7 +157,7 @@
                 <span class="file-tag">برمجة</span>
                 <h4>برمجة الميكروكنترولر</h4>
                 <p>دليل عملي للبدء في كتابة الأكواد واستخدام المتحكمات الدقيقة في المشاريع الهندسية.</p>
-                <a href="#" class="download-btn">تحميل </a>
+                <a href="#" class="download-btn">قــــــــــريبا</a>
             </div>
         </div>
     </section>
@@ -192,7 +210,7 @@
                     <p>نحن ندرك تماماً التحديات التي يواجهها طالب الهندسة: تشتت المصادر، صعوبة المراجع الأجنبية، والفجوة بين ما يُدرس في القاعات وما يطلبه سوق العمل. من قلب هذه التحديات، انطلقت منصتنا لتكون المرجع التقني الأول الذي يجمع بين الرصانة العلمية والبساطة في الطرح.</p>
                 </div>
                 <div class="about-visual-card">
-                    <img src="assets/ad-wArtboard 1.svg" >
+                    <img src="assets/ad-w.svg" >
                     <i class=""></i>
                     <h2>تبسيط المعرفة</h2>
                     <p style="opacity: 0.9; font-size: 0.95rem; margin-top: 10px; max-width: 250px; line-height: 1.5;">نصنع جسراً حقيقياً يربط دراستك الأكاديمية بالحياة المهنية والعملية</p>
@@ -214,7 +232,7 @@
             <div class="values-grid">
                 <!-- Value 1 -->
                 <div class="value-card-about">
-                    <img class="img-about" src="assets/brainArtboard 1.svg" >
+                    <img class="img-about" src="assets/brain.svg" >
                     <i class="bi-brain"></i>
                     <h4>التركيز على الجوهر</h4>
                     <p>نبتعد عن الحشو الأكاديمي ونركز على صلب الموضوع. نقدم لك المعلومة الصافية التي تحتاجها لفهم المادة وتطبيقها مباشرة دون تشتيت أو تعقيد إضافي.</p>
@@ -237,9 +255,9 @@
 
             <!-- Founder Message -->
             <div class="founder-message">
-                <img class="img-about" src="assets/quotArtboard 1.svg" >
+                <img class="img-about" src="assets/quot.svg" >
                 <p>سواء كنت طالباً في سنواتك الأولى تبحث عن التأسيس الصحيح في عالم الإلكترونيات، أو خريجاً يطمح لتطوير مهاراته التقنية وفهم أنظمة الاتصالات المعقدة، فإن منصة AD هي مساحتك الآمنة للتعلم، التجربة، والخطأ، حتى تصل إلى مرحلة الاحتراف والابتكار. المعرفة الهندسية حق للجميع، ومهمتنا هي جعل الوصول إليها أسهل وأكثر تنظيماً من أي وقت مضى.</p>
-                <h5>مؤسس منصة AD - مهندس اتصالات وإلكترونيات</h5>
+                <h5>مؤسس منصةأبــوضيـــــــــف</h5>
             </div>
         </div>
     </div>
@@ -337,10 +355,12 @@
             <div class="container">
         <!-- 📚 Modern Digital Library Section -->
             <div class="section-title">
-                <h2>المكتبة الهندسية والمراجع الرقمية</h2>
-                <p>مجموعة من أرقى الكتب والمناهج الدراسية الشاملة والمصممة لتسريع تعلمك وتوثيق معرفتك مجاناً</p>
-            </div>
-
+                <h2>المكتبة والمراجع الرقمية</h2>
+                <p>مجموعة من أرقى الكتب والمناهج الدراسية الشاملة والمصممة لتسريع تعلمك وتوثيق معرفتك .</p>
+  </div>
+<div  class="disclame" >
+<p >نحن نحترم حقوق الطبع والنشر الخاصة بالمؤلفين لذلك نحن نعرض لكم فقط المراجع التي نستخدمها في تحضير الدورات التعليمية.</p>
+</div>
             <!-- شبكة الكتب فارغة وجاهزة للحقن بواسطة JS -->
             <div class="library-grid" id="libraryGrid">
         </div>
@@ -348,7 +368,7 @@
 
     <!-- نافذة إشعار التحميل المخصصة لتجنب استخدام alert() -->
     <div class="custom-alert" id="customAlert">
-        <i class="fas fa-check-circle"></i>
+        <i class="bi-clock"></i>
         <span id="alertMessage">بدأ تحميل الملف الآن...</span>
     </div>
 </div>
@@ -364,9 +384,9 @@
             <h3>روابط سريعة</h3>
             <ul>
                 <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="#">الكورسات</a></li>
-                <li><a href="#">المكتبة</a></li>
-                <li><a href="#">عن المنصة</a></li>
+                <li><a href="#" id="nav-courses" onclick="navigateTo('courses')">الكورسات</a></li>
+                <li><a href="#" id="nav-lib" onclick="navigateTo('lib')" >المكتبة</a></li>
+                <li><a href="#" id="nav-about" onclick="navigateTo('about')">عن المنصة</a></li>
             </ul>
         </div>
     </div>

@@ -510,7 +510,7 @@
             background: var(--white);
             border: 1px solid #e4e7eb;
             color: var(--dark);
-            padding: 10px 20px;
+                padding: 17px 57px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 700;
@@ -773,6 +773,7 @@
             text-align: center;
             margin-bottom: 50px;
             padding-top: 80px;
+            
         }
 
         .section-title h2 {
@@ -974,7 +975,7 @@ background: rgba(255, 255, 255, 0.95);/* نفس لون الـ Navbar */
             
             .stats { margin-top: -20px; padding: 30px 10px; }
             
-            .section-title { padding-top: 50px; margin-bottom: 30px; }
+            .section-title { padding-top: 50px; margin-bottom: 40px; }
             .section-title h2 { font-size: 1.8rem; }
             
             .newsletter { padding: 50px 20px; }
@@ -1192,13 +1193,21 @@ background: rgba(255, 255, 255, 0.95);/* نفس لون الـ Navbar */
         .img-about{width: 50px;}
         /*****************                lib          ******************************/
          /* --- Section Header --- */
+            .disclame {color: crimson;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 50px;
+    }
         .library-section {
             padding: 20px 0;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         .section-title h2 {
@@ -1271,7 +1280,7 @@ background: rgba(255, 255, 255, 0.95);/* نفس لون الـ Navbar */
         .book-3d-container {
             position: relative;
             /* الأبعاد القياسية للمواقع الإلكترونية للكتب (عرض 180px وارتفاع 270px يعطي نسبة 2:3 دقيقة وثابتة تماماً) */
-            width: 180px;
+            width: 210px;
             height: 270px;
             perspective: 1000px;
         }
@@ -1279,7 +1288,7 @@ background: rgba(255, 255, 255, 0.95);/* نفس لون الـ Navbar */
         .book-cover {
             width: 100%;
             height: 100%;
-            border-radius: 4px 12px 12px 4px;
+            border-radius: 1px 2px 2px 1px;
             position: relative;
             overflow: hidden;
             display: flex;
@@ -1356,8 +1365,9 @@ background: rgba(255, 255, 255, 0.95);/* نفس لون الـ Navbar */
 
         /* ألوان ومظاهر أغلفة الكتب الفاخرة */
         .bg-cover-pcb {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            border-left: 5px solid #38bdf8;
+            background: url(img/p.png); background-size: cover;
+            border-left: 1px solid #38bdf8;  
+            
         }
         .bg-cover-telecom {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
@@ -1507,7 +1517,7 @@ background: rgba(255, 255, 255, 0.95);/* نفس لون الـ Navbar */
 
             .book-3d-container {
                 /* الحفاظ على النسبة الرائعة حتى في الهواتف */
-                width: 160px;
+                width: 188px;
                 height: 240px;
             }
 
